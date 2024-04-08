@@ -1,0 +1,18 @@
+/* 파일명 : css/style.css */
+
+p{ 
+    color: green;
+}
+
+
+span{
+  color: blue;
+}
+
+.space{
+  color: skyblue;
+}
+
+#aa{
+  color: red;
+}
