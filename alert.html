@@ -20,9 +20,9 @@
     주석문
     이렇게
     */
-    let name = "이은혜"; // 변수 선언
-    let admin;  // 변수 선언
-    admin = name;  // 변수값 복사?? 대입
+    // 변수 선언
+    // 변수 선언
+    // 변수값 복사?? 대입
     // 안녕 이은혜를 출력
     // alert(admin);  // 알림창 출력
     // alert("안녕!"+ admin); // 알림창 출력
@@ -36,8 +36,15 @@
     // 이름은 누구누구 나이는 00살 학생은 true 또는 false
     let result = prompt ("나이를 입력: ");
     alert(`당신의 나이는 ${result}살 입니다.`);
-    result = confirm("당신은 학생인가요?")
+    result = confirm("당신은 주인인가요?")
     alert(result);
+    // reuslt 의 값은? true 또는 false
+    // alert(result);
+    if (result) {
+      alert("네~ 주인님~ 어서오세요! 무엇을 도와 드릴까요?")
+    } else { // 아니면
+      alert ("꺼져~");
+    }
 
     
 </script>
