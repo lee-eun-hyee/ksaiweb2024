@@ -36,30 +36,30 @@ let name = prompt("이름을 입력하세요");
 
 // 나이 입력하세요
 let age = prompt("나이를 입력하세요");
-age = parseInt(age); // 여기서 변수 이름을 '나이'에서 'age'로 바꿔야 함.
+age = parseInt(age); // 나이를 숫자로 변환
 
 // 당신은 학생인가요?
 let isSt = confirm("당신은 학생인가요?");
 let st = ""; // 임시 변수
+
 if (!isSt) {
     alert("너는 누구냐~");
-} // 확인 또는 취소
+} else { // 학생일 경우에만 나이에 따른 분류를 진행
+    if (age >= 8 && age <= 13) {
+        st = "초등학생";
+    } else if (age >= 14 && age <= 16) {
+        st = "중학생";
+    } else if (age >= 17 && age <= 19) {
+        st = "고등학생";
+    } else if (age >= 20) {
+        st = "대학생이나 성인";
+    } else {
+        st = "아기";
+    }
 
-if (age >= 8 && age <= 13) { 
-    st = "초등학생";
-}
-if (age >= 14 && age <= 16) { 
-    st = "중학생";
-}
-if (age >= 17 && age <= 19) { 
-    st = "고등학생";
-} else if (age >= 20) { 
-    st = "대학생이나 성인";
-} else {
-    st = "아기";
+    alert("당신의 이름은 " + name + "이고, 나이는 " + age + "살이며, " + st + "입니다.");
 }
 
-alert("당신의 이름은 " + name + " 나이는 " + age + "살 " + st + "입니다."); 
 
 
 
